@@ -205,6 +205,63 @@ FinSight AI is currently **under active development**, and new features are cont
 
 ---
 
+## ⚙️ Running the Project Locally
+
+Follow these steps to run the FinSight application on your local machine.
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone <your-repository-url>
+cd Base44_FinSight
+```
+
+### 2️⃣ Install Dependencies
+
+Make sure Node.js is installed on your system, then run:
+
+```bash
+npm install
+```
+
+### 3️⃣ Create Environment Variables
+
+Create a file named `.env.local` in the root directory of the project and add the following:
+
+```
+VITE_BASE44_APP_ID=your_app_id
+VITE_BASE44_APP_BASE_URL=your_app_url
+```
+
+These variables allow the frontend to connect with the Base44 backend services.
+
+### 4️⃣ Start the Development Server
+
+Run the following command:
+
+```bash
+npm run dev
+```
+
+### 5️⃣ Open the Application
+
+After the server starts, open your browser and go to:
+
+```
+http://localhost:5173
+```
+
+The FinSight dashboard should now be running locally.
+
+---
+
+## 📝 Notes
+
+* The frontend runs locally using **Vite**.
+* Backend APIs are served through the Base44 application.
+* Some features such as AI insights or prediction history may not work if the Base44 integration limits are reached.
+
+
 # Author
 
 Developed by **Yashvin**
